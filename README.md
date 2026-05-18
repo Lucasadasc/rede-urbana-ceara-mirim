@@ -26,11 +26,6 @@ Modelar a malha viária como um grafo e identificar:
 
 Neste projeto extraímos a malha viária do centro de Ceará-Mirim com OSMnx (modo `drive`), pré-processamos e simplificamos o grafo (conversão para não direcionado e remoção de multiedges), calculamos e adicionamos ao grafo as métricas principais (grau, betweenness, closeness e core number), identificamos os hubs e o k-core principal, geramos visualizações em Python (mapas e gráficos) e exportamos o grafo com atributos para Gephi (`rede_urbana.graphml`) para análises e layouts estruturais.
 
-## Notebooks
-
-- Localizado em `notebooks/redes_urbanas_ceara_mirim.ipynb`
-- Contém código completo para extração, análise e visualização da rede viária
-
 ## Métricas e Resultados
 
 - **Grau**: Identificamos os nós com maior número de conexões, que correspondem a áreas centrais da cidade. Neste caso, os nós com maior grau (4) se repetem em vários pontos, indicando uma rede relativamente homogênea em termos de conexões locais.
@@ -39,34 +34,33 @@ Neste projeto extraímos a malha viária do centro de Ceará-Mirim com OSMnx (mo
 
 ## Principais visualizações
 - **Mapa geográfico**: Visualização da rede urbana sobreposta ao mapa real, destacando os nós.
-[Figura 1: Rede urbana do centro de Ceará-Mirim sobreposta ao mapa real.](figuras/mapa_geografico.png)
+[Figura 1: Rede urbana do centro de Ceará-Mirim sobreposta ao mapa real.](figuras/rede_urbana.png)
 
 - **Grafo estrutural**: Visual
 
 ## Questionamentos relevantes da análise:
-- Os nós com maior grau coincidem com os nós de maior betweenness?
+- **Os nós com maior grau coincidem com os nós de maior betweenness?**
     
     Na rede viária, os nós com maior grau (número de conexões) nem sempre coincidem com os nós de maior betweenness (nós que atuam como pontes entre diferentes partes da rede). Isso ocorre porque um nó pode ter muitas conexões locais, mas não ser crucial para a conectividade global da rede. Por outro lado, um nó com menos conexões pode ser essencial para conectar diferentes regiões, resultando em alta betweenness.
 
-- O núcleo identificado pelo k-core coincide com os principais hubs?
+- **O núcleo identificado pelo k-core coincide com os principais hubs?**
     
     Coincide, mas por ser uma região central de uma cidade pequena (k-core maior igual a 2), o núcleo é relativamente pequeno e coincide com os principais hubs, que são os nós mais conectados. No entanto, em redes maiores e mais complexas, o núcleo pode incluir nós que não são necessariamente hubs, mas que são importantes para a estrutura geral da rede.
 
-- O que a métrica de betweenness revela que o grau não revela?
-    
+- **O que a métrica de betweenness revela que o grau não revela?**
     A métrica de betweenness revela a importância de um nó para a conectividade global da rede, indicando quais nós atuam como pontes entre diferentes partes da rede. O grau, por outro lado, apenas indica o número de conexões locais de um nó, sem considerar sua posição na estrutura geral da rede. Portanto, um nó com alto grau pode não ser tão crucial para a conectividade global quanto um nó com alta betweenness. Como temos uma rede pequena, os nós com maior grau (4) se repetem em vários pontos, mas poucos tem alto betweenness.
 
-- O que muda quando a rede é analisada em sua posição geográfica real e quando é analisada por um layout estrutural?
+- **O que muda quando a rede é analisada em sua posição geográfica real e quando é analisada por um layout estrutural?**
 
-- Existem regiões críticas para mobilidade urbana na área analisada?
+- **Existem regiões críticas para mobilidade urbana na área analisada?**
         
     Sim. A análise revelou que existem regiões críticas para a mobilidade urbana, especialmente em áreas onde há maior concentração de vias e interseções, como o centro da cidade. Esses pontos críticos são identificados por nós com alta betweenness, indicando que eles atuam como pontes entre diferentes partes da rede.
 
-- A rede parece homogênea ou apresenta concentração estrutural?
+- **A rede parece homogênea ou apresenta concentração estrutural?**
     
     A rede apresenta uma concentração estrutural, com alguns nós atuando como hubs e outros nós com alta betweenness que são críticos para a conectividade da rede. A presença de hubs indica que existem áreas com maior conectividade, enquanto a presença de nós com alta betweenness sugere que existem pontos críticos para a mobilidade urbana.
 
-- Os resultados obtidos fazem sentido considerando o conhecimento urbano da região escolhida?
+- **Os resultados obtidos fazem sentido considerando o conhecimento urbano da região escolhida?**
     
     Sim. Com base na nossa experiência pessoal e conhecimento da região, os resultados obtidos fazem sentido. Os nós identificados como hubs e com alta betweenness correspondem a áreas centrais e de maior fluxo de tráfego, o que é consistente com a estrutura urbana do centro de Ceará-Mirim. A análise geográfica também revelou que as áreas críticas para mobilidade urbana estão localizadas em pontos estratégicos da cidade, onde há maior concentração de vias e interseções. 
     Entendemos também que a rua principal da cidade, que é a General João Varela, por ser duplicada, aparece no grafo com 2 nós por cruzamento, o que pode ter influenciado a análise de centralidade, mas ainda assim os resultados obtidos são coerentes com a realidade urbana da região.
