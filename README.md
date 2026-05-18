@@ -34,7 +34,7 @@ Neste projeto extraímos a malha viária do centro de Ceará-Mirim com OSMnx (mo
 
 ## Principais visualizações
 - **Mapa geográfico**: Visualização da rede urbana sobreposta ao mapa real, destacando os nós.
-[Figura 1: Rede urbana do centro de Ceará-Mirim sobreposta ao mapa real.](figuras/rede_urbana.png)
+![Rede urbana — Ceará-Mirim](figuras/rede_urbana.png)
 
 - **Grafo estrutural**: Visual
 
