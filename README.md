@@ -62,7 +62,7 @@ Neste projeto extraímos a malha viária do centro de Ceará-Mirim com OSMnx (mo
 
     Podemos ver ainda, que na tabela que destaca os nós com maior betweenness (imagem abaixo), alguns que possuem grau 3, indicando que mesmo com menos conexões locais, eles são cruciais para a conectividade global da rede.
 
-    [Tabela dos nós com maior betweenness](notebooks/figuras/tabela_top_betweenness.png)
+    ![Tabela dos nós com maior betweenness](notebooks/figuras/tabela_top_betweenness.png)
 
 - **O que muda quando a rede é analisada em sua posição geográfica real e quando é analisada por um layout estrutural?**
 
