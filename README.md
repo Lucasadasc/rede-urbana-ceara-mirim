@@ -46,7 +46,7 @@ Neste projeto extraímos a malha viária do centro de Ceará-Mirim com OSMnx (mo
 ![Mapa de calor de betweenness](notebooks/figuras/mapa_calor_betweenness.png)
 
 - **K-core principal**: Visualização do núcleo da rede identificado pelo k-core.
-![K-core principal](notebooks/figuras/k_core.png)
+![K-core principal](notebooks/figuras/k_core_2.png)
 
 ## Questionamentos relevantes da análise:
 - **Os nós com maior grau coincidem com os nós de maior betweenness?**
@@ -59,6 +59,10 @@ Neste projeto extraímos a malha viária do centro de Ceará-Mirim com OSMnx (mo
 
 - **O que a métrica de betweenness revela que o grau não revela?**
     A métrica de betweenness revela a importância de um nó para a conectividade global da rede, indicando quais nós atuam como pontes entre diferentes partes da rede. O grau, por outro lado, apenas indica o número de conexões locais de um nó, sem considerar sua posição na estrutura geral da rede. Portanto, um nó com alto grau pode não ser tão crucial para a conectividade global quanto um nó com alta betweenness. Como temos uma rede pequena, os nós com maior grau (4) se repetem em vários pontos, mas poucos tem alto betweenness.
+
+    Podemos ver ainda, que na tabela que destaca os nós com maior betweenness (imagem abaixo), alguns que possuem grau 3, indicando que mesmo com menos conexões locais, eles são cruciais para a conectividade global da rede.
+
+    [Tabela dos nós com maior betweenness](notebooks/figuras/tabela_top_betweenness.png)
 
 - **O que muda quando a rede é analisada em sua posição geográfica real e quando é analisada por um layout estrutural?**
 
@@ -74,6 +78,10 @@ Neste projeto extraímos a malha viária do centro de Ceará-Mirim com OSMnx (mo
     
     Sim. Com base na nossa experiência pessoal e conhecimento da região, os resultados obtidos fazem sentido. Os nós identificados como hubs e com alta betweenness correspondem a áreas centrais e de maior fluxo de tráfego, o que é consistente com a estrutura urbana do centro de Ceará-Mirim. A análise geográfica também revelou que as áreas críticas para mobilidade urbana estão localizadas em pontos estratégicos da cidade, onde há maior concentração de vias e interseções. 
     Entendemos também que a rua principal da cidade, que é a General João Varela, por ser duplicada, aparece no grafo com 2 nós por cruzamento, o que pode ter influenciado a análise de centralidade, mas ainda assim os resultados obtidos são coerentes com a realidade urbana da região.
+
+## Conclusão
+
+A análise estrutural da rede urbana do centro de Ceará-Mirim revelou insights importantes sobre a conectividade e os pontos críticos da malha viária. A identificação de hubs, nós com alta betweenness e o núcleo da rede através do k-core permitiu compreender melhor a estrutura da rede e suas implicações para a mobilidade urbana. Os resultados obtidos são consistentes com o conhecimento urbano da região, destacando áreas centrais e pontos críticos para a mobilidade. Este estudo demonstra a importância de aplicar conceitos avançados de estrutura de dados para analisar redes urbanas e contribuir para o planejamento urbano e a melhoria da mobilidade.
 
 ## Autores
 
