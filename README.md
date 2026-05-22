@@ -110,6 +110,10 @@ Neste projeto extraímos a malha viária do centro de Ceará-Mirim com OSMnx (mo
     Sim. Com base na nossa experiência pessoal e conhecimento da região, os resultados obtidos fazem sentido. Os nós identificados como hubs e com alta betweenness correspondem a áreas centrais e de maior fluxo de tráfego, o que é consistente com a estrutura urbana do centro de Ceará-Mirim. A análise geográfica também revelou que as áreas críticas para mobilidade urbana estão localizadas em pontos estratégicos da cidade, onde há maior concentração de vias e interseções. 
     Entendemos também que a rua principal da cidade, que é a General João Varela, por ser duplicada, aparece no grafo com 2 nós por cruzamento, o que pode ter influenciado a análise de centralidade, mas ainda assim os resultados obtidos são coerentes com a realidade urbana da região.
 
+## Link para vídeo de apresentação no Loom
+[Vídeo de apresentação](https://www.loom.com/share/a08f46b053dc45c9888679b29f7d006d)
+
+
 ## Conclusão
 
 A análise estrutural da rede urbana do centro de Ceará-Mirim revelou insights importantes sobre a conectividade e os pontos críticos da malha viária. A identificação de hubs, nós com alta betweenness e o núcleo da rede através do k-core permitiu compreender melhor a estrutura da rede e suas implicações para a mobilidade urbana. Os resultados obtidos são consistentes com o conhecimento urbano da região, destacando áreas centrais e pontos críticos para a mobilidade. Este estudo demonstra a importância de aplicar conceitos avançados de estrutura de dados para analisar redes urbanas e contribuir para o planejamento urbano e a melhoria da mobilidade.
