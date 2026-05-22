@@ -65,6 +65,7 @@ Neste projeto extraímos a malha viária do centro de Ceará-Mirim com OSMnx (mo
     ![Tabela dos nós com maior betweenness](notebooks/figuras/tabela_top_betweenness.png)
 
 - **O que muda quando a rede é analisada em sua posição geográfica real e quando é analisada por um layout estrutural?**
+    Quando a rede é analisada em sua posição geográfica real, a interpretação está relacionada ao espaço urbano físico(forma da cidade, e localização dos bairros...), já no layout estrutural, a posição dos nós deixa de representar localização física e passa a representar relações topológicas da rede.
 
 - **Existem regiões críticas para mobilidade urbana na área analisada?**
         
