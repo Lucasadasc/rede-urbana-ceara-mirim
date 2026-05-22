@@ -116,7 +116,7 @@ Neste projeto extraímos a malha viária do centro de Ceará-Mirim com OSMnx (mo
 
 ## Conclusão
 
-A análise estrutural da rede urbana do centro de Ceará-Mirim revelou insights importantes sobre a conectividade e os pontos críticos da malha viária. A identificação de hubs, nós com alta betweenness e o núcleo da rede através do k-core permitiu compreender melhor a estrutura da rede e suas implicações para a mobilidade urbana. Os resultados obtidos são consistentes com o conhecimento urbano da região, destacando áreas centrais e pontos críticos para a mobilidade. Este estudo demonstra a importância de aplicar conceitos avançados de estrutura de dados para analisar redes urbanas e contribuir para o planejamento urbano e a melhoria da mobilidade.
+A análise estrutural da rede urbana do centro de Ceará-Mirim revelou insights importantes sobre a conectividade e os pontos críticos da malha viária. A identificação de hubs, nós com alta betweenness e o núcleo da rede através do k-core permitiu compreender melhor a estrutura da cidade e os desafios para a mobilidade urbana. Os resultados obtidos são consistentes com o conhecimento urbano da região, destacando a importância de áreas centrais para a conectividade e a presença de pontos críticos que podem impactar o fluxo de tráfego. Esta análise pode servir como base para futuras intervenções urbanas e planejamento de mobilidade na cidade.
 
 ## Autores
 
