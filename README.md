@@ -34,18 +34,23 @@ Neste projeto extraímos a malha viária do centro de Ceará-Mirim com OSMnx (mo
 
 ## Principais visualizações (OSMnx)
 - **Mapa geográfico**: Visualização da rede urbana sobreposta ao mapa real, destacando os nós.
+
 ![Rede urbana — Ceará-Mirim](notebooks/figuras/rede_urbana.png)
 
 - **Top 10 nós por grau**: Gráfico de barras mostrando os nós com maior número de conexões.
+
 ![Top 10 nós por grau](notebooks/figuras/distribuicao_graus.png)
 
 - **Top 10 nós por betweenness**: Gráfico de barras mostrando os nós mais críticos para a conectividade da rede.
+
 ![Top 10 nós por betweenness](notebooks/figuras/top_betweenness.png)
 
 - **Mapa de calor de betweenness**: Visualização geográfica destacando os nós com maior betweenness.
+
 ![Mapa de calor de betweenness](notebooks/figuras/mapa_calor_betweenness.png)
 
 - **K-core principal**: Visualização do núcleo da rede identificado pelo k-core.
+
 ![K-core principal](notebooks/figuras/k_core_2.png)
 
 ## Principais visualizações (Gephi)
