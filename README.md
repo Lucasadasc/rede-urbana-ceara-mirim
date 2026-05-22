@@ -32,7 +32,7 @@ Neste projeto extraímos a malha viária do centro de Ceará-Mirim com OSMnx (mo
 - **Betweenness**: Identificamos os nós que atuam como pontes entre diferentes partes da rede, revelando pontos críticos para a mobilidade urbana. Poucos nós apresentaram alta betweenness, indicando que a rede é relativamente robusta, mas existem pontos críticos que podem causar congestionamento se forem bloqueados.
 - **K-core**: O núcleo identificado pelo k-core (k-core maior igual a 2) coincide com os principais hubs, indicando que as áreas centrais da cidade são também as mais conectadas. No entanto, o núcleo é relativamente pequeno, o que é esperado para uma cidade de porte pequeno como Ceará-Mirim.
 
-## Principais visualizações
+## Principais visualizações (OSMnx)
 - **Mapa geográfico**: Visualização da rede urbana sobreposta ao mapa real, destacando os nós.
 ![Rede urbana — Ceará-Mirim](notebooks/figuras/rede_urbana.png)
 
@@ -47,6 +47,9 @@ Neste projeto extraímos a malha viária do centro de Ceará-Mirim com OSMnx (mo
 
 - **K-core principal**: Visualização do núcleo da rede identificado pelo k-core.
 ![K-core principal](notebooks/figuras/k_core_2.png)
+
+## Principais visualizações (Gephi)
+- **Vis1**: Adicione aqui
 
 ## Questionamentos relevantes da análise:
 - **Os nós com maior grau coincidem com os nós de maior betweenness?**
@@ -65,7 +68,7 @@ Neste projeto extraímos a malha viária do centro de Ceará-Mirim com OSMnx (mo
     ![Tabela dos nós com maior betweenness](notebooks/figuras/tabela_top_betweenness.png)
 
 - **O que muda quando a rede é analisada em sua posição geográfica real e quando é analisada por um layout estrutural?**
-    Quando a rede é analisada em sua posição geográfica real, a interpretação está relacionada ao espaço urbano físico(forma da cidade, e localização dos bairros...), já no layout estrutural, a posição dos nós deixa de representar localização física e passa a representar relações topológicas da rede.
+    Quando a rede é analisada em sua posição geográfica real, a interpretação está relacionada ao espaço urbano físico (forma da cidade, e localização dos bairros...), já no layout estrutural, a posição dos nós deixa de representar localização física e passa a representar relações topológicas da rede.
 
 - **Existem regiões críticas para mobilidade urbana na área analisada?**
         
