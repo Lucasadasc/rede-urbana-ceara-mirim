@@ -50,21 +50,27 @@ Neste projeto extraímos a malha viária do centro de Ceará-Mirim com OSMnx (mo
 
 ## Principais visualizações (Gephi)
 - **Geo Layout**: Visualização da rede em sua posição geográfica real, destacando os nós e suas conexões.
+
 ![Geo Layout](gephi/figuras/geolayout.png)
 
 - **Force Atlas 2**: Visualização da rede utilizando um layout estrutural, onde a posição dos nós representa suas relações topológicas.
+
 ![Force Atlas 2](gephi/figuras/forceatlas2.png)
 
 - **Filtro K-core**: Visualização do núcleo da rede identificado pelo k-core, destacando os nós que pertencem ao núcleo.
+
 ![Filtro K-core](gephi/figuras/filtrok-core.png)
 
 - **Filtro intervalo de graus**: Visualização dos nós com grau entre 3 e 4, destacando os hubs da rede.
+
 ![Filtro intervalo de graus](gephi/figuras/filtrointervalodegrau.png)
 
 - **Betweenness**: Visualização dos nós com betweenness entre 0.01 e 0.05, destacando os pontos críticos da rede.
+
 ![Filtro betweenness](gephi/figuras/betweenness.png)
 
 -**Core Number**: Visualização dos nós com core number entre 1 e 2, destacando os nós que pertencem ao núcleo da rede.
+
 ![Filtro core number](gephi/figuras/corenumber.png)
 
 ## Questionamentos relevantes da análise:
