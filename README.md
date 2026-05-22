@@ -111,7 +111,7 @@ Neste projeto extraímos a malha viária do centro de Ceará-Mirim com OSMnx (mo
     Entendemos também que a rua principal da cidade, que é a General João Varela, por ser duplicada, aparece no grafo com 2 nós por cruzamento, o que pode ter influenciado a análise de centralidade, mas ainda assim os resultados obtidos são coerentes com a realidade urbana da região.
 
 ## Link para vídeo de apresentação no Loom
-[Vídeo de apresentação](https://www.loom.com/share/a08f46b053dc45c9888679b29f7d006d)
+- [Vídeo de apresentação](https://www.loom.com/share/a08f46b053dc45c9888679b29f7d006d)
 
 
 ## Conclusão
