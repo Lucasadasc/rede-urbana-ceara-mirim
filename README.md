@@ -121,4 +121,4 @@ A análise estrutural da rede urbana do centro de Ceará-Mirim revelou insights 
 ## Autores
 
 - [Lucas Augusto da Silva Cardoso](https://github.com/lucasadasc)
-- [Pedro Henrique Ribeiro de Lima](https://github.com/pedenrique3)
+- [Pedro Henrique Ribeiro de Lima](https://github.com/pedenriqu3)
